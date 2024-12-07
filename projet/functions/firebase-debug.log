@@ -1,0 +1,76 @@
+[debug] [2024-11-12T14:29:21.506Z] ----------------------------------------------------------------------
+[debug] [2024-11-12T14:29:21.509Z] Command:       C:\Program Files\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2024-11-12T14:29:21.510Z] CLI Version:   13.24.2
+[debug] [2024-11-12T14:29:21.510Z] Platform:      win32
+[debug] [2024-11-12T14:29:21.510Z] Node Version:  v20.18.0
+[debug] [2024-11-12T14:29:21.510Z] Time:          Tue Nov 12 2024 15:29:21 GMT+0100 (heure normale d’Europe centrale)
+[debug] [2024-11-12T14:29:21.511Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-12T14:29:21.590Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-12T14:29:21.590Z] > authorizing via signed-in user (ba4730899@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\python 1\projettlkhernchlh\projet
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-11-12T14:29:33.475Z] Using project from CLI flag: authentication-7797e
+[debug] [2024-11-12T14:29:33.478Z] Checked if tokens are valid: true, expires at: 1731424493696
+[debug] [2024-11-12T14:29:33.478Z] Checked if tokens are valid: true, expires at: 1731424493696
+[debug] [2024-11-12T14:29:33.484Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/authentication-7797e [none]
+[debug] [2024-11-12T14:29:33.976Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/authentication-7797e 200
+[debug] [2024-11-12T14:29:33.976Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/authentication-7797e {"projectId":"authentication-7797e","projectNumber":"1013998045105","displayName":"authentication","name":"projects/authentication-7797e","resources":{"hostingSite":"authentication-7797e"},"state":"ACTIVE","etag":"1_325a9011-4942-492c-b445-290c9137cf56"}
+[info] i  Using project authentication-7797e (authentication) 
+[info] 
+=== Functions Setup
+[debug] [2024-11-12T14:29:33.981Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-12T14:29:33.982Z] > authorizing via signed-in user (ba4730899@gmail.com)
+[debug] [2024-11-12T14:29:33.982Z] [iam] checking project authentication-7797e for permissions ["firebase.projects.get"]
+[debug] [2024-11-12T14:29:33.982Z] Checked if tokens are valid: true, expires at: 1731424493696
+[debug] [2024-11-12T14:29:33.982Z] Checked if tokens are valid: true, expires at: 1731424493696
+[debug] [2024-11-12T14:29:33.982Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/authentication-7797e:testIamPermissions [none]
+[debug] [2024-11-12T14:29:33.982Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/authentication-7797e:testIamPermissions x-goog-quota-user=projects/authentication-7797e
+[debug] [2024-11-12T14:29:33.982Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/authentication-7797e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-11-12T14:29:34.801Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/authentication-7797e:testIamPermissions 200
+[debug] [2024-11-12T14:29:34.801Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/authentication-7797e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-11-12T14:29:34.802Z] Checked if tokens are valid: true, expires at: 1731424493696
+[debug] [2024-11-12T14:29:34.802Z] Checked if tokens are valid: true, expires at: 1731424493696
+[debug] [2024-11-12T14:29:34.803Z] Checked if tokens are valid: true, expires at: 1731424493696
+[debug] [2024-11-12T14:29:34.803Z] Checked if tokens are valid: true, expires at: 1731424493696
+[debug] [2024-11-12T14:29:34.803Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/authentication-7797e/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-11-12T14:29:34.803Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/authentication-7797e/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/authentication-7797e
+[debug] [2024-11-12T14:29:34.806Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/authentication-7797e/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-11-12T14:29:34.806Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/authentication-7797e/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/authentication-7797e
+[debug] [2024-11-12T14:29:35.822Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/authentication-7797e/services/cloudfunctions.googleapis.com 200
+[debug] [2024-11-12T14:29:35.823Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/authentication-7797e/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-11-12T14:29:35.858Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/authentication-7797e/services/runtimeconfig.googleapis.com 200
+[debug] [2024-11-12T14:29:35.859Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/authentication-7797e/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
